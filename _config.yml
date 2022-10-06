@@ -22,7 +22,7 @@ title: Historia
 email: gomezmunera@corum.org.co
 description: >- # this means to ignore newlines until "baseurl:"
   Edición de texto
-baseurl: "/historia" # the subpath of your site, e.g. /blog
+baseurl: /Historia # the subpath of your site, e.g. /blog
 url: "https://gomezmunera.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  gomezmunera
