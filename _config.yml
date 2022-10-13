@@ -27,6 +27,9 @@ url: "https://gomezmunera.github.io" # the base hostname & protocol for your sit
 #twitter_username: jekyllrb
 github_username:  gomezmunera
 
+#
+prueba: "hola mundo"
+
 # Build settings
 markdown: kramdown
 theme: minima
