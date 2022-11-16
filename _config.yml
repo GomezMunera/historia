@@ -38,9 +38,10 @@ plugins:
 
 defaults:
   - scope:
-      path: "assets/img"
+      path: "assets"
     values:
       image: true
+      pdf: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
