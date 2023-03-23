@@ -5,13 +5,25 @@ permalink: /recuerdos/
 ---
 <html>
 
-<h1>{{ "Recuerdos de Marinilla" | camelCase }}</h1>
+    <!--ANIMACIÓN-->
+    <h1 class="ml1">
+      <span class="text-wrapper">
+        <span class="line line1"></span>
+        <span class="letters">{{ page.title }}</span>
+        <span class="line line2"></span>
+      </span>
+    </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../assets/js/animacion.js"></script>
+
+  <!--LLAMADO A LAS IMAGENES-->
 
     {% for image in site.static_files %}
       {% if image.path contains 'assets/img' %}
           <div class="gallery">
           <a target="_blank" href="{{site.baseurl}}{{image.path}}">
-            <img src="{{site.baseurl}}{{image.path}}" alt="Forest" style="width:150px">
+            <img srcset="{{site.baseurl}}{{image.path}}" alt="Marinilla" style="width:200px">
           </a>
           </div>
       {% endif %}

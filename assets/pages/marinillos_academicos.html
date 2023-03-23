@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Marinillos en el Mundo</title>
+        <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.13.0/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/@deck.gl/jupyter-widget@~8.8.*/dist/index.js'></script>
+    <style>
+    body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#deck-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#deck-container canvas {
+  z-index: 1;
+  background: none;
+}
+    </style>
+  </head>
+  <body>
+    <div id="deck-container">
+    </div>
+  </body>
+  <script>
+    const container = document.getElementById('deck-container');
+    const jsonInput = {
+  "initialViewState": {
+    "bearing": 0,
+    "latitude": 5,
+    "longitude": 0,
+    "pitch": 20,
+    "zoom": 1
+  },
+  "layers": [
+    {
+      "@@type": "GreatCircleLayer",
+      "autoHighlight": true,
+      "data": [
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Alejandro Giraldo",
+            "type": "academico",
+            "year": "2022"
+          },
+          "from_student": "Alejandro Giraldo",
+          "from_year": "2022",
+          "to": {
+            "abbrev": "Lou",
+            "coordinates": [
+              -85.75941,
+              38.25424
+            ],
+            "name": "Louisville - EEUU",
+            "type": "academico"
+          },
+          "to_name": "Louisville - EEUU"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Nataly Zuluaga Montoya",
+            "type": "academico",
+            "year": "2011"
+          },
+          "from_student": "Nataly Zuluaga Montoya",
+          "from_year": "2011",
+          "to": {
+            "abbrev": "Bri",
+            "coordinates": [
+              153.02809,
+              -27.46794
+            ],
+            "name": "Brisbane - Australia",
+            "type": "academico"
+          },
+          "to_name": "Brisbane - Australia"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "David Quintero",
+            "type": "academico",
+            "year": "2022"
+          },
+          "from_student": "David Quintero",
+          "from_year": "2022",
+          "to": {
+            "abbrev": "Jap",
+            "coordinates": [
+              141.350006,
+              43.066666
+            ],
+            "name": "Sapporo - Jap\u00f3n",
+            "type": "academico"
+          },
+          "to_name": "Sapporo - Jap\u00f3n"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Zoraida Arcila Aristizabal",
+            "type": "academico",
+            "year": "2014"
+          },
+          "from_student": "Zoraida Arcila Aristizabal",
+          "from_year": "2014",
+          "to": {
+            "abbrev": "Mx",
+            "coordinates": [
+              -99.12766,
+              19.42847
+            ],
+            "name": "Ciudad de M\u00e9xico - M\u00e9xico",
+            "type": "academico"
+          },
+          "to_name": "Ciudad de M\u00e9xico - M\u00e9xico"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Sara Urrea",
+            "type": "academico",
+            "year": "2014"
+          },
+          "from_student": "Sara Urrea",
+          "from_year": "2014",
+          "to": {
+            "abbrev": "Mx",
+            "coordinates": [
+              -49.27306,
+              -25.42778
+            ],
+            "name": "Curitiba - Brasil",
+            "type": "academico"
+          },
+          "to_name": "Curitiba - Brasil"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Cindia Arango",
+            "type": "academico",
+            "year": "2022"
+          },
+          "from_student": "Cindia Arango",
+          "from_year": "2022",
+          "to": {
+            "abbrev": "Hs",
+            "coordinates": [
+              -95.36327,
+              29.76328
+            ],
+            "name": "Houston - EEUU",
+            "type": "academico"
+          },
+          "to_name": "Houston - EEUU"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Diego Zuluaga",
+            "type": "academico",
+            "year": "2012"
+          },
+          "from_student": "Diego Zuluaga",
+          "from_year": "2012",
+          "to": {
+            "abbrev": "Mx",
+            "coordinates": [
+              -99.14,
+              19.5
+            ],
+            "name": "Ciudad de M\u00e9xico - M\u00e9xico",
+            "type": "academico"
+          },
+          "to_name": "Ciudad de M\u00e9xico - M\u00e9xico"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Estefania Rinc\u00f3n Valencia",
+            "type": "academico",
+            "year": "2016"
+          },
+          "from_student": "Estefania Rinc\u00f3n Valencia",
+          "from_year": "2016",
+          "to": {
+            "abbrev": "Hs",
+            "coordinates": [
+              -123.11934,
+              49.24966
+            ],
+            "name": "Vancouver - Canada",
+            "type": "academico"
+          },
+          "to_name": "Vancouver - Canada"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Juan Camilo Chac\u00f3n",
+            "type": "academico",
+            "year": "2012"
+          },
+          "from_student": "Juan Camilo Chac\u00f3n",
+          "from_year": "2012",
+          "to": {
+            "abbrev": "In",
+            "coordinates": [
+              -0.12574,
+              51.50853
+            ],
+            "name": "Londres - Inglaterra",
+            "type": "academico"
+          },
+          "to_name": "Londres - Inglaterra"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Yersica Rios",
+            "type": "academico",
+            "year": "2012"
+          },
+          "from_student": "Yersica Rios",
+          "from_year": "2012",
+          "to": {
+            "abbrev": "Ar",
+            "coordinates": [
+              -58.37723,
+              -34.61315
+            ],
+            "name": "Buenos Aires - Argentina",
+            "type": "academico"
+          },
+          "to_name": "Buenos Aires - Argentina"
+        },
+        {
+          "from": {
+            "abbrev": "Mar",
+            "coordinates": [
+              -75.33621,
+              6.17358
+            ],
+            "name": "Marinilla",
+            "student": "Natalia Llano",
+            "type": "academico",
+            "year": "2019"
+          },
+          "from_student": "Natalia Llano",
+          "from_year": "2019",
+          "to": {
+            "abbrev": "Esp",
+            "coordinates": [
+              -3.70256,
+              40.4165
+            ],
+            "name": "Madrid - Espa\u00f1a",
+            "type": "academico"
+          },
+          "to_name": "Madrid - Espa\u00f1a"
+        }
+      ],
+      "getSourceColor": [
+        64,
+        200,
+        0
+      ],
+      "getSourcePosition": "@@=from.coordinates",
+      "getStrokeWidth": 12,
+      "getTargetColor": [
+        55,
+        128,
+        200
+      ],
+      "getTargetPosition": "@@=to.coordinates",
+      "id": "6354d03d-156a-43d8-8937-9b589b6fb9b9",
+      "pickable": true
+    }
+  ],
+  "mapProvider": "carto",
+  "mapStyle": "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
+  "pickingRadius": 10,
+  "views": [
+    {
+      "@@type": "MapView",
+      "controller": true
+    }
+  ]
+};
+    const tooltip = {'text': '{from_student} a {to_name} en {from_year}'};
+    const customLibraries = null;
+    const configuration = null;
+
+    const deckInstance = createDeck({
+                  container,
+      jsonInput,
+      tooltip,
+      customLibraries,
+      configuration
+    });
+
+  </script>
+</html>
