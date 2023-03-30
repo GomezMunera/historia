@@ -20,7 +20,7 @@ permalink: /recuerdos/
   <!--LLAMADO A LAS IMAGENES-->
 
     {% for image in site.static_files %}
-      {% if image.path contains 'assets/img' %}
+      {% if image.path contains 'assets/img/recuerdos' %}
           <div class="gallery">
           <a target="_blank" href="{{site.baseurl}}{{image.path}}">
             <img srcset="{{site.baseurl}}{{image.path}}" alt="Marinilla" style="width:200px">
