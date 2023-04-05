@@ -132,8 +132,7 @@ $brand-color:  rgb(128, 0, 17);
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.8;
-  transition: 0.5s ease-out;
-  
+  transition: 0.5s ease-in-out; 
 }
 
 .section img:hover{
@@ -142,6 +141,7 @@ $brand-color:  rgb(128, 0, 17);
   cursor: pointer;
   filter: saturate(180%);
   filter: contrast(150%);
+  display: block;
 }
 
 /* Botón en la imagen de galeria */
