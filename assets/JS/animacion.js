@@ -27,7 +27,6 @@ t1
 })
 */
 
-
 anime.timeline({loop: 2})
   .add({
     targets: '.ml1 .letter',
