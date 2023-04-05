@@ -15,7 +15,7 @@ permalink: /recuerdos/
     </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/animacion.js"></script>
+    <script src="{{ site.baseurl }}/assets/JS/animacion.js"></script>
 
   <!--LLAMADO A LAS IMAGENES-->
 
