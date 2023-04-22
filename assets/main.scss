@@ -117,31 +117,34 @@ $brand-color:  rgb(128, 0, 17);
 /* Galeria del home */
 
 .section{
-  width: 135%;
+  width: 140%;
   height: 600px;
   display: flex;
 
   margin-top: -2.5%;
   margin-right: -17%;
   margin-bottom: auto;
-  margin-left: -17%;
+  margin-left: -20%;
 }
-
-.section img{
-  width: 0;
+.section div img{
   flex-grow: 1;
+  width: 100%;
   object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease-in-out; 
 }
 
-.section img:hover{
+.section div img:hover{
   opacity: 1;
-  width: 300px;
+  width: 200%;
   cursor: pointer;
   filter: saturate(180%);
   filter: contrast(150%);
   display: block;
 }
 
+.section div:hover {
+  width: 35% !important;
+  transition: 1s ease-in-out; 
+}
 /* Botón en la imagen de galeria */

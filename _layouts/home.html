@@ -3,11 +3,14 @@ layout: default
 ---
 
 <div class="section">
-  <img src="{{ site.baseurl}}/assets/img/galeria/1950.png" title="Migración">
-  <img src="{{ site.baseurl}}/assets/img/galeria/Ecos.png">
-  <img src="{{ site.baseurl}}/assets/img/galeria/Expansion.png">
-  <img src="{{ site.baseurl}}/assets/img/galeria/Libro.png">
-  <img src="{{ site.baseurl}}/assets/img/galeria/Paisaje.png">
+  {% for capitulo in site.data.inicio.capitulos %}
+    <div style="width: 20%;">
+      <img src="{{ site.baseurl}}/assets/img/galeria/{{capitulo.image}}" title="Migración" style="height: 100%;">
+      <div style="position: relative; top: -100px; right: -35%;">
+        <a class="button" href="{{capitulo.path}}">{{capitulo.title}}</a>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 <br>
