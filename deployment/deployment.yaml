@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: historia-deployment
+  namespace: historia
+  labels:
+    app: historia
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: historia
+  template:
+    metadata:
+      labels:
+        app: historia
+    spec:
+      containers:
+        - name: historia
+          image: corumcorp/historia:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80

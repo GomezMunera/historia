@@ -1,0 +1,39 @@
+apiVersion: networking.k8s.io/v1
+kind: ingress
+metadata:
+  annotations:
+    nginx.ingress.kubernets.io/rewrite-target: /
+    cert-manager.io/cluster-issuer: letsencrypt-staging
+    acme.cert-manager.io/http01-ingress-class: public
+  name: historia-ingress
+  namespace: historia
+spec:
+  ingressClassName: public
+  rules:
+  - hosts: corum-historia.org.co
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: historia-svc
+            port:
+              number: 80
+   - host: www.corum.org.co
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: historia-svc
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - corum.org.co
+    secretName: corumpage-com-co
+  - hosts:
+    - www.corum.org.co
+    secretName: corumpage-www-com-co
