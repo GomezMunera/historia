@@ -3,14 +3,14 @@ kind: ingress
 metadata:
   annotations:
     nginx.ingress.kubernets.io/rewrite-target: /
-    cert-manager.io/cluster-issuer: letsencrypt-staging
+    cert-manager.io/cluster-issuer: letsencrypt-production
     acme.cert-manager.io/http01-ingress-class: public
   name: historia-ingress
   namespace: historia
 spec:
   ingressClassName: public
   rules:
-  - hosts: historia.corum.org.co
+  - hosts: espiraldetiempomarinilla.com.co
     http:
       paths:
       - path: /
@@ -20,7 +20,7 @@ spec:
             name: historia-svc
             port:
               number: 80
-   - host: www.historia.corum.org.co
+   - host: www.espiraldetiempomarinilla.com
     http:
       paths:
       - path: /
@@ -32,8 +32,8 @@ spec:
               number: 80
   tls:
   - hosts:
-    - historia.corum.org.co
-    secretName: corumpage-com-co
+    - espiraldetiempomarinilla.com.co
+    secretName: historia-com-co
   - hosts:
-    - www.historia.corum.org.co
-    secretName: corumpage-www-com-co
+    - www.espiraldetiempomarinilla.com.co
+    secretName: historia-www-com-co
