@@ -4,11 +4,6 @@ capitulos:
     image: '1950.png'
     title: 'Migracion'
 
-  - name: 'ecos'
-    path: ''
-    image: 'Ecos.png'
-    title: 'Ecos'
-
   - name: 'expansion'
     path: ''
     image: 'Expansion.png'
