@@ -30,7 +30,8 @@ t1
 anime.timeline({loop: 2})
   .add({
     targets: '.ml1 .letter',
-    translateX: 400,
+    translateX: 100,
+    //translateX: $content-width/10,
     scale: [0.3,1],
     opacity: [0,1],
     translateZ: 0,

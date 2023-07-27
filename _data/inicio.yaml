@@ -5,9 +5,9 @@ capitulos:
     title: 'Generalidades'
 
   - name: 'expansion'
-    path: 'assets/capitulos/2 Expasión Urbana.pdf'
+    path: 'assets/capitulos/2 Evolución Físico Espacial.pdf'
     image: 'expansion.png'
-    title: 'Expansión'
+    title: 'Evolución'
 
   - name: 'procesos'
     path: 'assets/capitulos/3 Procesos Sociales y Comunitarios.pdf'
