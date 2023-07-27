@@ -23,8 +23,8 @@ author: CORUM
 email: contacto@corum.org.co
 description:  >-  # this means to ignore newlines until "baseurl:"
   “Espiral de tiempo Historia de Marinilla Ecos de la historia, recuerdos y vivencias”
-baseurl: /historia # the subpath of your site, e.g. /blog
-url: "https://gomezmunera.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  gomezmunera
 instagram_username: corumong
@@ -47,6 +47,17 @@ defaults:
       image: true
       pdf: true
 
+include:
+  - .well-known
+
+header_pages:
+  - pages/blog.md
+  - pages/capitulos.md
+  - pages/mapa.md
+  - pages/multimedia.md
+  - pages/recuerdos.md
+  - pages/repositorio.md
+  - pages/maleta.md
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

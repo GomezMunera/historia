@@ -1,0 +1,103 @@
+<!--Monografia-->
+<div class="highlight">
+<center>
+    <h1> Estudio Monográfico </h1>
+    <h2> Marinilla 1967-2014 </h2>
+
+
+    <div class="row">
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'monografia'" -%}  
+    {% for pdf in pdfs %}
+        <div class="column-2">
+        <div class="flex-container">
+            <div class="card" style="width: 400px; height: 320px;">
+            <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_mono/imagen_mono.png"></a>
+            <div class="container">
+                <h4><b>{{ pdf.basename | slice: 0,120 }}
+                {% if pdf.basename.size > 120  %}...{% endif %}
+                </b></h4>
+                <p> <button style="margin:0px"><a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a></button></p>
+            </div>  
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+    </center>
+    <br>
+</div>
+    
+<!--Inventario del patrimonio cultural e inmaterial-->
+<div class="highlight" style="height: 600px;">
+<center>
+    <h1> Inventario del patrimonio cultural e inmaterial de Marinilla </h1>
+
+    <div class="row">
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'icpa'" -%}  
+    {% for pdf in pdfs %}
+        <div class="column-2">
+        <div class="flex-container">
+            <div class="card" style="width: 400px; height: 500px;">
+            <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_pat/imagen_patri.png" style="width: 70%; height: 70;"></a>
+            <div class="container">
+                <h4><b>{{ pdf.basename | slice: 0,120 }}
+                {% if pdf.basename.size > 120  %}...{% endif %}
+                </b></h4>
+                <p> <button style="margin:0px"><a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a></button></p>
+            </div>  
+            </div>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+    </center>
+    <br>
+</div>
+    
+<!--Tesis-->
+<div class="highlight">
+    <h1 > Tesis </h1>
+    <div class="row">
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'PDF'" -%}  
+    {% for pdf in pdfs %}
+        <div class="column">
+        <div class="card" style="width: 320px; height: 280px;">
+            <h4><b>{{ pdf.basename | slice: 0,120 }}
+            {% if pdf.basename.size > 120  %}...{% endif %}
+            </b></h4>
+            <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
+        </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+    
+<!--Artículos-->
+<div class="highlight">
+<h1 class="ml1">
+        <span class="text-wrapper">
+        <!--span class="line line1"></span-->
+        <span class="letters">Artículos</span>
+        <!--span class="line line2"></span-->
+        </span>
+    </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/JS/animacion.js"></script>
+    <!--h1 > Artículos </h1-->
+    <div class="row">
+    <!--
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'PDF'" -%}  
+    {% for pdf in pdfs %}
+        <div class="column">
+        <div class="card" style="width: 320px; height: 280px;">
+            <h4><b>{{ pdf.basename | slice: 0,120 }}
+            {% if pdf.basename.size > 120  %}...{% endif %}
+            </b></h4>
+            <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
+        </div>
+        </div>
+    {% endfor %}
+    -->
+    </div>
+</div>
