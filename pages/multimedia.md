@@ -8,6 +8,8 @@ permalink: /multimedia/
 
 {% include powerbi.html %}
 
-
-## Marinilla como SmartCity
-{% include videos.html id='smartcity.mp4' %}
+<div class="video-container">
+    {% for video in site.data.videos.videos %}
+        {% include videos.html video=video %}
+    {% endfor %}
+</div>

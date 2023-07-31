@@ -2,6 +2,9 @@
 var textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
+// size
+var widthcont = document.body.clientWidth;
+
 /*
 var t1 = anime.timeline({
   easing:'easeOutElastic(10,1.8)',
@@ -30,8 +33,8 @@ t1
 anime.timeline({loop: 2})
   .add({
     targets: '.ml1 .letter',
-    translateX: 100,
-    //translateX: $content-width/10,
+    //translateX: 400,
+    translateX: widthcont/4,
     scale: [0.3,1],
     opacity: [0,1],
     translateZ: 0,
@@ -42,7 +45,7 @@ anime.timeline({loop: 2})
     delay: (el, i) => 400 * (i+1)
   }).add({
     targets: '.ml1 .line',
-    translateX: 400,
+    translateX: widthcont/4,
     scaleX: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",

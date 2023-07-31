@@ -10,7 +10,7 @@
     {% for pdf in pdfs %}
         <div class="column-2">
         <div class="flex-container">
-            <div class="card" style="width: 400px; height: 320px;">
+            <div class="card" style="width: 100%">
             <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_mono/imagen_mono.png"></a>
             <div class="container">
                 <h4><b>{{ pdf.basename | slice: 0,120 }}
@@ -28,7 +28,7 @@
 </div>
     
 <!--Inventario del patrimonio cultural e inmaterial-->
-<div class="highlight" style="height: 600px;">
+<div class="highlight" style="width: 100%">
 <center>
     <h1> Inventario del patrimonio cultural e inmaterial de Marinilla </h1>
 
@@ -37,7 +37,7 @@
     {% for pdf in pdfs %}
         <div class="column-2">
         <div class="flex-container">
-            <div class="card" style="width: 400px; height: 500px;">
+            <div class="card" style="width: 100%">
             <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_pat/imagen_patri.png" style="width: 70%; height: 70;"></a>
             <div class="container">
                 <h4><b>{{ pdf.basename | slice: 0,120 }}

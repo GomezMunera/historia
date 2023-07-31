@@ -1,0 +1,11 @@
+videos:
+  - name: 'smartcity'
+    title: 'Marinilla ciudad inteligente'
+    path: 'smartcity.mp4'
+    type: 'video/mp4'
+    
+
+  - name: 'la28'
+    title: 'Malecón de la 28'
+    path: '28.mp4'
+    type: 'video/mp4'
