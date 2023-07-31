@@ -22,9 +22,17 @@ permalink: /recuerdos/
     {% for image in site.static_files %}
       {% if image.path contains 'assets/img/recuerdos' %}
           <div class="gallery">
-          <a target="_blank" href="{{site.baseurl}}{{image.path}}">
-            <img srcset="{{site.baseurl}}{{image.path}}" alt="Marinilla" style="width:200px">
+          <a href="#openModal{{ image.path }}">
+            <img class="imagen-gallery" srcset="{{site.baseurl}}{{image.path}}" alt="Marinilla" style="width:200px">
           </a>
+          </div>
+
+          <div id="openModal{{ image.path }}" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <h2>Recuerdos</h2>
+              <img class="imagen-gallery" srcset="{{site.baseurl}}{{image.path}}" alt="Marinilla" style="width:100%; max-height:40rem">
+            </div>
           </div>
       {% endif %}
     {% endfor %}

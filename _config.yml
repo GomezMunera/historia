@@ -53,11 +53,12 @@ include:
 header_pages:
   - pages/blog.md
   - pages/capitulos.md
+  - pages/maleta.md
   - pages/mapa.md
   - pages/multimedia.md
   - pages/recuerdos.md
   - pages/repositorio.md
-  - pages/maleta.md
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
