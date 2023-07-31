@@ -1,3 +1,4 @@
+#!/bin/sh 
 RANDOM=$$
 git pull
 bundle exec jekyll build
