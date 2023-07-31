@@ -1,0 +1,39 @@
+- name: 'Generalidades'
+  isYoutube: true
+  title: 'Generalidades'
+  path: 'OuW6BZlbvRo'
+
+- name: 'Procesos'
+  isYoutube: true
+  title: 'Procesos Juveniles'
+  path: 'MllU8PkvGfM'
+
+- name: 'Humedales'
+  isYoutube: true
+  title: 'Humedales'
+  path: 'IeQjOrgdfpg'
+
+- name: 'Contraste'
+  isYoutube: true
+  title: 'Contraste Campesino'
+  path: 'Qbw6ChPF2A8'
+
+- name: 'MujerCampesina'
+  isYoutube: true
+  title: 'Mujer Campesina'
+  path: 'cdgY0FlUCqY'
+
+- name: 'Actividad'
+  isYoutube: true
+  title: 'Actividad Económica'
+  path: 'yu-KQJ4Yd5w'
+
+- name: 'Cultural'
+  isYoutube: true
+  title: '¿Qué piensas de Marinilla? '
+  path: 'JsI-CFt4-wU'
+
+- name: 'smartcity'
+  title: 'Marinilla ciudad inteligente'
+  path: 'smartcity.mp4'
+  type: 'video/mp4'
