@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Panorama Socio-Politico en la historia de Marinilla"
+date:   2014-09-05 16:21:06 -0500
+author: Francisco Luis Cuervo
+categories: jekyll update
+---
+Escrito elaborado por Francisco Luis cuervo sobre el Panorama Socio-Politico en la historia de Marinilla en el año 2014. 
+
+<center>
+        <iframe class="iframe-class" src ="{{ site.baseurl }}/assets/escritos/Articulo_2.pdf" style="min-height: 50rem"></iframe>
+</center>

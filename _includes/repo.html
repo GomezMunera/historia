@@ -1,8 +1,8 @@
 <!--Monografia-->
-<div class="highlight">
+<div class="highlight" style="min-height: 32rem;">
 <center>
-    <h1> Estudio Monográfico </h1>
-    <h2> Marinilla 1967-2014 </h2>
+    <h1><b> Estudio Monográfico </b></h1>
+    <h2><b>  Marinilla 1967-2014 </b></h2>
 
 
     <div class="row">
@@ -10,7 +10,7 @@
     {% for pdf in pdfs %}
         <div class="column-2">
         <div class="flex-container">
-            <div class="card" style="width: 400px; height: 320px;">
+            <div class="card" style="width: 100%; min-height: 20rem;">
             <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_mono/imagen_mono.png"></a>
             <div class="container">
                 <h4><b>{{ pdf.basename | slice: 0,120 }}
@@ -28,16 +28,16 @@
 </div>
     
 <!--Inventario del patrimonio cultural e inmaterial-->
-<div class="highlight" style="height: 600px;">
+<div class="highlight" style="min-height: 40rem;">
 <center>
-    <h1> Inventario del patrimonio cultural e inmaterial de Marinilla </h1>
+    <h1><b> Inventario del patrimonio cultural e inmaterial de Marinilla </b></h1>
 
     <div class="row">
     {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'icpa'" -%}  
     {% for pdf in pdfs %}
         <div class="column-2">
         <div class="flex-container">
-            <div class="card" style="width: 400px; height: 500px;">
+            <div class="card" style="width: 100%; min-height: 30rem;">
             <a href="{{site.baseurl}}{{ pdf.path }}"><img src="{{site.baseurl}}/assets/img/img_pat/imagen_patri.png" style="width: 70%; height: 70;"></a>
             <div class="container">
                 <h4><b>{{ pdf.basename | slice: 0,120 }}
@@ -56,17 +56,17 @@
     
 <!--Tesis-->
 <div class="highlight">
-    <h1 > Tesis </h1>
+    <h1><b>Tesis </b></h1>
     <div class="row">
-    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'PDF'" -%}  
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'Tesis'" -%}  
     {% for pdf in pdfs %}
         <div class="column">
-        <div class="card" style="width: 320px; height: 280px;">
-            <h4><b>{{ pdf.basename | slice: 0,120 }}
-            {% if pdf.basename.size > 120  %}...{% endif %}
-            </b></h4>
-            <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
-        </div>
+            <div class="card" style="width: 100%; min-height: 17rem;">
+                <h4>{{ pdf.basename | slice: 0,120 }}
+                {% if pdf.basename.size > 120  %}...{% endif %}
+                </h4>
+                <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
+            </div>
         </div>
     {% endfor %}
     </div>
@@ -74,30 +74,54 @@
     
 <!--Artículos-->
 <div class="highlight">
-<h1 class="ml1">
-        <span class="text-wrapper">
-        <!--span class="line line1"></span-->
-        <span class="letters">Artículos</span>
-        <!--span class="line line2"></span-->
-        </span>
-    </h1>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/JS/animacion.js"></script>
-    <!--h1 > Artículos </h1-->
+    <h1><b>Artículos </b></h1>
     <div class="row">
-    <!--
-    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'PDF'" -%}  
+    {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'Articulos'" -%}  
     {% for pdf in pdfs %}
         <div class="column">
-        <div class="card" style="width: 320px; height: 280px;">
-            <h4><b>{{ pdf.basename | slice: 0,120 }}
+        <div class="card" style="width: 100%; min-height: 17rem;">
+            <h4>{{ pdf.basename | slice: 0,120 }}
             {% if pdf.basename.size > 120  %}...{% endif %}
-            </b></h4>
+            </h4>
             <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
         </div>
         </div>
     {% endfor %}
-    -->
+    </div>
+</div>
+
+<!--Libros-->
+<div class="highlight">
+    <h1><b>Libros </b></h1>
+    <div class="row">
+        {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'Libros'" -%}  
+        {% for pdf in pdfs %}
+            <div class="column">
+            <div class="card" style="width: 100%; min-height: 17rem;">
+                <h4>{{ pdf.basename | slice: 0,120 }}
+                {% if pdf.basename.size > 120  %}...{% endif %}
+                </h4>
+                <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
+            </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!--Otros-->
+<div class="highlight">
+    <h1><b>Otros </b></h1>
+    <div class="row">
+        {%- assign pdfs = site.static_files | where_exp: "file", "file.path contains 'Otros'" -%}  
+        {% for pdf in pdfs %}
+            <div class="column">
+            <div class="card" style="width: 100%; min-height: 17rem;">
+                <h4>{{ pdf.basename | slice: 0,120 }}
+                {% if pdf.basename.size > 120  %}...{% endif %}
+                </h4>
+                <p>Leer <a href="{{site.baseurl}}{{ pdf.path }}">Archivo</a>.</p>
+            </div>
+            </div>
+        {% endfor %}
     </div>
 </div>

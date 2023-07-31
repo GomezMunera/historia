@@ -2,6 +2,7 @@
 layout: post
 title:  "Los closets para la ropa, la vida para los maricas"
 date:   2022-12-21 12:00:00 -0500
+author: Marisol Gómez Hernandez
 categories: jekyll update
 ---
 
@@ -56,7 +57,7 @@ Historias como estas son las que a diario vivimos, son reales y son vividas por 
 Es claro que una se menciona, se reconoce y se presenta (cosa que no debería ser así) como mujer lesbiana, de forma personal no lo hago porque busque me llamen o me señalen como lesbiana, lo hago por que es una forma de nombrar lo innombrable, como un acto político, como un acto de resistencia, como un acto de transformación; Soy Marisol Gómez Hernández, mi nombre identitario es: Mar, soy una mujer Lesbiana que habita el municipio de Marinilla, soy hija, soy hermana, soy tía, soy persona, soy real y soy una marica sin rayo homosexualizador; soy una feminista en construcción, soy una defensora de las pequeñas causas que generan grandes transformaciones, soy constructora de un territorio, soy una persona que incomoda, porque en un mundo a blanco y negro nosotros los maricas lo pintamos de colores, y lo diferente incomoda y si la incomodidad transforma, yo seguiré incomodando.
 
 
-`MARISOL GÓMEZ HARNÁNDEZ`
+`MARISOL GÓMEZ HERNÁNDEZ`
 
 <!--Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 

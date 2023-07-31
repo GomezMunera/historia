@@ -2,35 +2,13 @@
 var textWrapper = document.querySelector('.ml1 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-/*
-var t1 = anime.timeline({
-  easing:'easeOutElastic(10,1.8)',
-  duration: 2500
-});
-
-//Add children
-t1
-.add({
-  targets: '.ml1 .letter',
-  translateX: 400,
-    scale: [0.3,1],
-    opacity: [0,1],
-    duration: 2000,
-    delay: (el, i) => 400 * (i+1)
-})
-.add({
-  targets: '.ml1 .line',
-    translateX: 400,
-    scaleX: [0,1],
-    opacity: [0.5,1],
-    duration: 500
-})
-*/
+// size
+var widthcont = document.body.clientWidth;
 
 anime.timeline({loop: 2})
   .add({
     targets: '.ml1 .letter',
-    translateX: 100,
+    translateX: widthcont/4,
     //translateX: $content-width/10,
     scale: [0.3,1],
     opacity: [0,1],
@@ -42,7 +20,7 @@ anime.timeline({loop: 2})
     delay: (el, i) => 400 * (i+1)
   }).add({
     targets: '.ml1 .line',
-    translateX: 400,
+    translateX: widthcont/4,
     scaleX: [0,1],
     opacity: [0.5,1],
     easing: "easeOutExpo",

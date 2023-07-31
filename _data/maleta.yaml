@@ -1,0 +1,16 @@
+postales:
+  - name: 'postal_1'
+    title: 'Naturalmente Cultural'
+    path: '/assets/maleta/postales/horizontal_1.png'
+
+  - name: 'postal_2'
+    title: 'Ubicación'
+    path: '/assets/maleta/postales/horizontal_2.png'
+
+  - name: 'postal_3'
+    title: 'Humedal Barbacoa'
+    path: '/assets/maleta/postales/horizontal_3.png'
+
+  - name: 'postal_4'
+    title: 'Malecón'
+    path: '/assets/maleta/postales/horizontal_4.png'
