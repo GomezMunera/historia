@@ -1,0 +1,19 @@
+<h5>{{ simbolo.title }}</h5>
+
+{% if simbolo.isAudio %}
+    <audio controls>
+        <source src="{{site.baseurl}}/assets/multimedia/{{ simbolo.path }}" type="{{ simbolo.type }}">
+    </audio>
+{% else %}
+    <a href="#openModal{{ simbolo.path }}">
+        <img width="100%" src="{{ simbolo.path }}"> 
+    </a>
+    
+    <div id="openModal{{ simbolo.path }}" class="modalDialog" width="100%">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <h2>Simbolos</h2>
+          <img class="imagen-gallery" srcset="{{site.baseurl}}{{simbolo.path}}" alt="Marinilla" style="width:100%; min-height: 35rem; max-height:40rem">
+        </div>
+    </div>
+{% endif %}

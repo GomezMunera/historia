@@ -1,0 +1,17 @@
+- name: 'bandera'
+  title: 'La Bandera'
+  path: '/assets/img/simbolos/1.png'
+
+- name: 'escudo'
+  title: 'El Escudo'
+  path: '/assets/img/simbolos/2.png'
+
+- name: 'himno'
+  title: 'El Himno'
+  path: '/assets/img/simbolos/3.png'
+
+- name: 'himnoa'
+  isAudio: true
+  title: 'Audio del Himno'
+  path: 'himno.mp3'
+  type: 'audio/mpeg'
